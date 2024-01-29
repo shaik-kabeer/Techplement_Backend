@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const connectDB= async ()=>{
 try{
 
-    const connectionInstance=await mongoose.connect('mongodb+srv://shaikkabeer:Kabeer@cluster0.tyhdbzx.mongodb.net/');
+    const connectionInstance=await mongoose.connect('mongodb+srv://shaikkabeer:<passwrod>@cluster0.tyhdbzx.mongodb.net/');
     console.log(`MONGODB connection successfull ${connectionInstance.connection.host}`);
 
 
