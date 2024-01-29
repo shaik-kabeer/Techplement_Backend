@@ -10,7 +10,7 @@ const UserSchema = new mongoose.Schema({
         //  required: true,
         // unique: true,
         lowercase: true,
-        trim: true, 
+        trim: true,
         // index: true
     },
 
@@ -19,27 +19,27 @@ const UserSchema = new mongoose.Schema({
         // required: true,
         // unique: true,
         lowercase: true,
-        trim: true, 
+        trim: true,
         // index: true
     },
-    
+
     email: {
         type: String,
         // required: true,
         // unique: true,
         lowercase: true,
-        trim: true, 
+        trim: true,
         // index: true
     },
-    password:  {
+    password: {
         type: String,
         // required: true,
         // unique: true,
         lowercase: true,
-        trim: true, 
+        trim: true,
         // index: true
     },
 });
 
-    const User = mongoose.model('User', UserSchema);
-    export default User ;
+const User = mongoose.model('User', UserSchema);
+export default User;
